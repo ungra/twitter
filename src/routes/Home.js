@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { dbService } from "fbase";
 import Tweet from "components/Tweet";
-import { render } from "@testing-library/react";
 
 const Home = ({ userObj }) => {
   const [tweet, setTweet] = useState("");
   const [tweets, setTweets] = useState([]);
+  const [attachment, setAttachment] = useState();
 
   useEffect(() => {
     dbService.collection("tweets").onSnapshot((snapshot) => {
@@ -41,10 +41,14 @@ const Home = ({ userObj }) => {
     console.log(theFile);
     const reader = new FileReader();
     reader.onloadend = (finishedEvent) => {
-      console.log("finishedEvent:", finishedEvent);
+      const {
+        currentTarget: { result },
+      } = finishedEvent;
+      setAttachment(result);
     };
     reader.readAsDataURL(theFile);
   };
+  const onClearAttachment = () => setAttachment(null);
 
   return (
     <div>
@@ -58,6 +62,17 @@ const Home = ({ userObj }) => {
         />
         <input type="file" accept="image/*" onChange={onFileChange} />
         <input type="submit" value="Tweet" />
+        {attachment && (
+          <div>
+            <img
+              src={attachment}
+              width="500px"
+              height="500px"
+              alt="your photos"
+            />
+            <button onClick={onClearAttachment}>Clear</button>
+          </div>
+        )}
       </form>
       <div>
         {tweets.map((tweet) => (
