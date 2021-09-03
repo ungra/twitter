@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ungra/twitter/static/css/main.931739ec.chunk.css",
-    "main.js": "/ungra/twitter/static/js/main.672487d7.chunk.js",
-    "main.js.map": "/ungra/twitter/static/js/main.672487d7.chunk.js.map",
-    "runtime-main.js": "/ungra/twitter/static/js/runtime-main.dcf39d78.js",
-    "runtime-main.js.map": "/ungra/twitter/static/js/runtime-main.dcf39d78.js.map",
-    "static/js/2.438817b5.chunk.js": "/ungra/twitter/static/js/2.438817b5.chunk.js",
-    "static/js/2.438817b5.chunk.js.map": "/ungra/twitter/static/js/2.438817b5.chunk.js.map",
-    "index.html": "/ungra/twitter/index.html",
-    "static/css/main.931739ec.chunk.css.map": "/ungra/twitter/static/css/main.931739ec.chunk.css.map",
-    "static/js/2.438817b5.chunk.js.LICENSE.txt": "/ungra/twitter/static/js/2.438817b5.chunk.js.LICENSE.txt"
+    "main.css": "/twitter/static/css/main.931739ec.chunk.css",
+    "main.js": "/twitter/static/js/main.672487d7.chunk.js",
+    "main.js.map": "/twitter/static/js/main.672487d7.chunk.js.map",
+    "runtime-main.js": "/twitter/static/js/runtime-main.65204f18.js",
+    "runtime-main.js.map": "/twitter/static/js/runtime-main.65204f18.js.map",
+    "static/js/2.afb655ee.chunk.js": "/twitter/static/js/2.afb655ee.chunk.js",
+    "static/js/2.afb655ee.chunk.js.map": "/twitter/static/js/2.afb655ee.chunk.js.map",
+    "index.html": "/twitter/index.html",
+    "static/css/main.931739ec.chunk.css.map": "/twitter/static/css/main.931739ec.chunk.css.map",
+    "static/js/2.afb655ee.chunk.js.LICENSE.txt": "/twitter/static/js/2.afb655ee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.dcf39d78.js",
-    "static/js/2.438817b5.chunk.js",
+    "static/js/runtime-main.65204f18.js",
+    "static/js/2.afb655ee.chunk.js",
     "static/css/main.931739ec.chunk.css",
     "static/js/main.672487d7.chunk.js"
   ]
